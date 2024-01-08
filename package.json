@@ -1,27 +1,20 @@
 {
-  "name": "api-pp",
+  "name": "api_pp",
   "version": "1.0.0",
-  "description": "Ini adalah project untuk pembuatan api mata kuliah kerja praktek, di universitas dinamika bangsa kota jambi",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TomiSaputraa/api-kp.git"
-  },
-  "keywords": [
-    "api"
-  ],
   "author": "tomi saputra",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TomiSaputraa/api-kp/issues"
-  },
-  "homepage": "https://github.com/TomiSaputraa/api-kp#readme",
   "dependencies": {
-    "express": "^4.18.2",
-    "nodemon": "^3.0.1"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }

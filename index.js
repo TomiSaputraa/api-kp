@@ -1,11 +1,11 @@
 const express = require("express");
-const app = express();
-const port = 3000;
+const dotenv = require("dotenv").config();
 
-app.get("/home", (req, res) =>
-  res.json({
-    nama: "dsadsa",
-    umur: 20,
-  })
-);
-app.listen(port, () => console.log(`Aplikasi berjalan di port ${port}!`));
+const app = express();
+const port = process.env.PORT || 5000;
+
+app.use(express.json());
+
+app.use("/api/contacts", require("./src/routes/contactRoutes"));
+
+app.listen(port, () => console.log(`server running port : ${port}`));
