@@ -19,3 +19,5 @@ const contactSchema = mongoose.Schema(
     timestamps: true,
   }
 );
+
+module.exports = contactSchema;
